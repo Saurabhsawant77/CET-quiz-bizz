@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+html{
+    font-size: 68.5%;
+
+}
+.main-div{
+    
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    /* background-color: hsl(206, 85%, 49%); */
+    background-image: linear-gradient(to bottom,hsl(206, 85%, 49%),rgb(133, 207, 236));
+
+}
+
+p{
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px 5px;
+    font-size: 3rem;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1rem  rgba(0, 0, 0, 0.4);
+    
+}
+.subject{
+    font-size: 2rem;
+    text-decoration: none;
+    min-height: 20vh;
+    width: 75vh;
+    /* background-color: #00b894; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.chem,.phy,.maths{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    background-color: #e3f4f4;
+    padding: 2rem 5rem ;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+
+}
+.chem:hover,.phy:hover,.maths:hover{
+    background-color: #eb8b17;
+}
+.active{
+    background-color: #e86920;
+}
+/* #inner-div-id{
+    display: none;
+} */
+.inner-div{
+    display: none;
+    width: 30vw;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+.inner-div h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 1rem 0 4rem 0 ;
+}
+.inner-div li{
+    font-size: 2rem;
+    margin-top: 1.5rem ;
+    list-style: none;
+}
+.inner-div .buttons{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    cursor: pointer;
+}
+#submit,#pervious,#next, .btn{
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #74b9ff;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+#submit:hover,#next:hover,#pervious:hover{
+    background-color: #2980b9;
+}
+#showScore{
+    background-color: #d4b7e2bd;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+
+}
+
+#showScore h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#showScore .btn{
+    margin-top: 2rem;
+    color: black;
+    background-color: #55efc4;
+}
+#showScore .btn:hover{
+    margin-top: 2rem;
+    color: #fff;
+    background-color: #00b894 ;
+}
+.scoreArea{
+    display: none;
+}

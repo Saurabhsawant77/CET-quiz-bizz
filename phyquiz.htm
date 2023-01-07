@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <p id="countdown" onclick="setInterval(updateCountdwon,1000),displayQuiz()">Start Test</p>
+        <div class="subject">
+            <a href="chemquiz.htm"><div class="chem" onclick="loadQuestion1">Chemistry</div></a>
+            <a href="phyquiz.htm"><div class="phy active" onclick="loadQuestion2">Physics</div></a>
+            <a href="mathsquiz.htm"><div class="maths" onclick="loadQuestion3">Maths</div></a>
+        </div>
+        <div class="inner-div" id="inner-div-id">
+            <h2 class="question"> Questions HERE</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1"> answer 1</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2"> answer 2</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans3" id="option3"> answer 3</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans4" id="option4"> answer 4</label>
+                </li>
+            </ul>
+            <div class="buttons">
+                <button id="pervious"> < Previous</button>
+                <button id="submit">Submit</button>
+                <button id="next">Next > </button>
+                </div>
+            <div class="scoreArea" id="showScore"> </div>
+
+        </div>
+    </div>
+    <script src="phyquiz.js"></script>
+</body>
+</html>
